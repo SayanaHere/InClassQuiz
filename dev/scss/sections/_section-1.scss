@@ -1,0 +1,23 @@
+/* =============
+    Section 1
+============= */
+
+
+#section-1{ 
+    margin-top: 0em;
+    background-image: url('../img/section-1/picture1.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+    @include md{
+        background-position: center;
+        height: 600px;
+    }
+
+    @include lg{
+
+        background-position: center;
+        height: 700px;
+    }
+}
