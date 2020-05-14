@@ -1,52 +1,71 @@
 /* =============
     Footer
 ============= */
-footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 50px;
-    width: 100%;
-
+footer{
     background-color: $black;
-    padding: 30px 0 30px;
+    color: $grey;
     text-align: center;
+    padding: 45px;
 
-    #footer-content {
-        h1 {
-            font-size: 1em;
-            color: $white;
-        }
-        @include lg {
-          text-align: right;
-          padding-right: 1em;
-        }
 
-        ul {
-
-            @include lg {
-                display: flex;
-            justify-content: left;
-            }
+    #footer-content{
+        ul{
             display: flex;
             justify-content: center;
 
-            li {
+            li{
                 margin: 0 10px;
-        
 
-                a:link,
-                a:visited {
-                    color: $gray;
+                a:link, a:visited{
+                    color: $darkgrey;
                     transition: 0.25s;
-                    font-size: rem-calc(25);
+                    font-size: rem-calc(30);
                 }
 
-                a:hover,
-                a:active {
-                    color: $gray;
+                a:hover, a:active{
+                    color: $white;
                 }
             }
-        }
+
+            @include lg{
+                display: flex;
+                justify-content: flex-start;;
+            }
     }
+
+ h1{
+     font-size: rem-calc(11);
+
+     span{
+         color: red;
+     }
+
+     @include lg{
+         display: flex;
+         justify-content: flex-end;
+     }
+ }
+
+
+    // ul{
+    //     display: grid;
+    //     grid-template-columns: 30% auto 30%;
+    //     grid-template-areas: ". buttons .";
+
+    //     li{
+    //         grid-area: buttons;
+    //         margin: 0 10px;
+
+    //         a:link, a:visited{
+    //             color: $grey;
+    //             transition: 0.25s;
+    //         }
+
+    //         a:hover, a:active{
+    //             color: $white;
+    //         }
+    //     }
+    // }
+
+}
 }
